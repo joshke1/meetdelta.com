@@ -1,4 +1,2 @@
 # Keep Visual Studio out
 .vs/
-# Keep workingdir for dzone out
-dzone/!workingdirdzone/
