@@ -1,0 +1,112 @@
+﻿<!-- Telling the browser that were using HTML5 -->
+<!doctype html>
+<!-- Declare language -->
+<html lang="en">
+<head>
+    <!-- Title of the site bar -->
+    <title>Differentia</title>
+    <!-- Keywords for Google engine -->
+    <meta name="keywords" content="Discordbot, Entertainment, Delta, All-in-one, NadekoBot, Avaire, Discord.RSS, D-Zone, Opensource, Minimalistic">
+    <!-- Declare necessary encoding -->
+    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <!-- Makes scaling between devices possible -->
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <!-- Declare content type for Discord/property -->
+    <meta content=website property=og:type>
+    <!-- Declare title for Discord/link -->
+    <meta content="Delta, a different Discord bot" property=og:title>
+    <!-- Declare description for Discord/link -->
+    <meta content="The start and end are irrelevant, it's the difference that's matters." property=og:description>
+    <meta content="A discord bot, trying to be unique by combining the work of many." name=description>
+    <!-- Declare image for Discord/link -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta content=https://deltabot.me/favicons/Deltabothead.png property=og:image>
+    <!-- Declare color for Discord/link -->
+    <meta content=#93E6FA name=theme-color>
+    <!-- Favicon placements -->
+    <link href=favicons/favicon-96x96.png rel=icon sizes=128x128 type=image/png>
+    <link href=favicons/favicon-32x32.png rel=icon sizes=32x32 type=image/png>
+    <link href=favicons/favicon-16x16.png rel=icon sizes=16x16 type=image/png>
+    <!-- Windows tile color -->
+    <meta content=#2b5797 name=msapplication-TileColor>
+    <!-- Windows specify more configs from file -->
+    <meta content=/favicons/browserconfig.xml name=msapplication-config>
+    <!-- Favicon placement for safari webrowser MacOS -->
+    <link href=/favicons/favicon.svg rel=mask-icon color=black>
+    <!-- IOS Favicon -->
+    <link href=/favicons/apple-touch-icon.png rel=apple-touch-icon sizes=180x180>
+    <!-- Android Favicon -->
+    <link href=/favicons/site.webmanifest rel=manifest>
+    <!-- Android task bar color -->
+    <meta content=#93E6FA name=theme-color>
+    <!-- CSS style sheet external -->
+    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" type="text/css" href="style.css"></noscript>
+    <style>
+        /* Bottom Delta text */
+        .centered-bottom {
+            position: fixed;
+            bottom: 0;
+            left: 1%;
+            right: 1%;
+            font-size: 80px;
+            letter-spacing: 8px;
+            background-color: #00070d;
+
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Main picture -->
+    <picture>
+        <source srcset=images/Deltabot.webp type=image/webp>
+        <img alt=Deltabot draggable=false src=images/Deltabot.png style=max-width:100%;max-height:80%;position:fixed;margin-left:auto;margin-right:auto;top:0;left:0;right:0;>
+    </picture>
+    <!-- Quote under picture -->
+    <blockquote>
+        <div class=centered-middle>
+            <span class="centered-middle-bold">The difference</span><br>
+            between start and finish
+        </div>
+    </blockquote>
+    <!-- Bottom text -->
+    <div class=centered-bottom>DELTA</div>
+    <!-- Side menu -->
+    <div id="mySidenav" class="sidenav">
+        <!-- Titel Menu -->
+        <span class="head1">Menu</span>
+        <!-- Close button -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Home button -->
+        <a href="">Home</a>
+        <!-- About button -->
+        <a href="https://deltabot.me/about/">About</a>
+        <!-- Invite button -->
+        <a href="https://discordapp.com/oauth2/authorize?scope=bot&client_id=341194927935586305">Invite</a>
+        <!-- Music button -->
+        <a href="#">Music</a>
+        <!-- D-Zone button -->
+        <a href="https://deltabot.me/dzone/">D-Zone</a>
+    </div>
+    <!-- Open button menu -->
+    <div id=main><span onclick=openNav() style=font-size:30px;cursor:pointer;color:#fff>☰</span></div>
+    <!-- Script elements -->
+    <script>
+        // Script when called, changes the style of the side menu from 0 to 190px.
+        function openNav() {
+            // Moves the menu open
+            document.getElementById("mySidenav").style.width = "190px"; //250px
+            // Moves the open icon closed
+            document.getElementById("main").style.marginLeft = "-190px"; //190px
+        }
+        // Script when called, changes the style of the side menu from 190px to 0.
+        function closeNav() {
+            // Moves the menu closed
+            document.getElementById("mySidenav").style.width = "0";
+            // Moves the open icon open
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>

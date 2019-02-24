@@ -1,0 +1,323 @@
+<!-- Telling the browser that were using HTML5 -->
+<!doctype html>
+<!-- Declare language -->
+<html lang="en">
+<head>
+    <!-- Title of the site bar -->
+    <title>About Deltabot</title>
+    <!-- Declare necessary encoding -->
+    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <!-- Makes scaling between devices possible -->
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <!-- Declare content type for Discord/property -->
+    <meta content=website property=og:type>
+    <!-- Declare title for Discord/link -->
+    <meta content="Delta, a different Discord bot" property=og:title>
+    <!-- Declare description for Discord/link -->
+    <meta content="Made possible by: Yami, Cinialy, Lamina, AstronautCarrot & Gremagol. Projects used: Nadekobot, AvaIre, Discord.RSS & D-Zone." property=og:description>
+    <meta content="A discord bot, trying to be unique by combining the work of many." name=description>
+    <!-- Declare image for Discord/link -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta content=https://deltabot.me/favicons/Deltabothead.png property=og:image>
+    <!-- Declare color for Discord/link -->
+    <meta content=#93E6FA name=theme-color>
+    <!-- Favicon placements -->
+    <link href=../favicons/favicon-96x96.png rel=icon sizes=96x96 type=image/png>
+    <link href=../favicons/favicon-32x32.png rel=icon sizes=32x32 type=image/png>
+    <link href=../favicons/favicon-16x16.png rel=icon sizes=16x16 type=image/png>
+    <!-- Windows tile color -->
+    <meta content=#2b5797 name=msapplication-TileColor>
+    <!-- Windows specify more configs from file -->
+    <meta content=../favicons/browserconfig.xml name=msapplication-config>
+    <!-- Favicon placement for safari webrowser MacOS -->
+    <link href=../favicons/favicon.svg rel=mask-icon color=black>
+    <!-- IOS Favicon -->
+    <link href=../favicons/apple-touch-icon.png rel=apple-touch-icon sizes=180x180>
+    <!-- Android Favicon -->
+    <link href=../favicons/site.webmanifest rel=manifest>
+    <!-- Android task bar color -->
+    <meta content=#93E6FA name=theme-color>
+    <!-- CSS style sheet external Async -->
+    <link rel="preload" href="../style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" type="text/css" href="../style.css"></noscript>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <style>
+        /* Priotize loading */
+        #mainwrapper {
+            width: auto;
+            overflow: hidden;
+        }
+
+        #textelement {
+            width: 100%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- Side Menu -->
+    <div id="mySidenav" class="sidenav">
+        <span class="head1">Menu</span>
+        <!-- Close button -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Home button -->
+        <a href="https://deltabot.me/">Home</a>
+        <!-- About button -->
+        <a href="">About</a>
+        <!-- Invite button -->
+        <a href="https://discordapp.com/oauth2/authorize?scope=bot&client_id=341194927935586305" target="_blank">Invite</a>
+        <!-- Music button -->
+        <a href="#">Music</a>
+        <!-- D-Zone button -->
+        <a href="https://deltabot.me/dzone/">D-Zone</a>
+    </div>
+    <!-- Open button -->
+    <div id="main" style="float: left; padding: 16px; padding-top: 11px; position: absolute;">
+        <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
+    </div>
+    <!-- Section of page About -->
+    <div class=section style="margin-top:5px">About</div>
+    <!-- Row projects -->
+    <div id="mainwrapper">
+        <div class="row">
+            <!-- Introduction -->
+            <div class="columnabout">
+                <div class="card">
+                    <div id="textelement" class="text-allign">
+                        It started with an idea to host our own bot for fun. For the bot, I needed an identity and Yami created	a personage called "Delta" with robotic features. Inspired by her idea I suggested using her persona for the bot. And so Delta became a working bot.<br>
+                        <br>
+                        I wasn't satisfied with Nadeko's functionality of the music and RSS-feeds. I found better alternatives	like AvaIre and Discord.RSS. It was possible to host many projects into one bot, and so Delta began to expand.<br>
+                        <br>
+                        I asked my friends to make their own version of Delta for some commands. So you see different styles of	Delta.<br>
+                        <br>
+                        I hope you enjoy using Delta, if you have any questions or issues, you can message Delta trough PM and	I'll get back to you.<br>
+                        Make sure to read the Purpose section to know how to use Delta in your Discord Server!<br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!-- Animation -->
+            <div class="columnabout">
+                <div class="card">
+                    <div class="fling-minislide">
+                        <img src="../images/Delta_v0.png" srcset="../images/Delta_v0.webp 1x, ../images/Delta_v0.png 2x, ../images/Delta_v0.webp 3x" alt="Delta v0" draggable=false>
+                        <img src="../images/Delta_v1.png" srcset="../images/Delta_v1.webp 1x, ../images/Delta_v1.png 2x, ../images/Delta_v1.webp 3x" alt="Delta v1" draggable=false>
+                        <img src="../images/Delta_v2.png" srcset="../images/Delta_v2.webp 1x, ../images/Delta_v2.png 2x, ../images/Delta_v2.webp 3x" alt="Delta v2" draggable=false>
+                        <img src="../images/Delta_v3.png" srcset="../images/Delta_v3.webp 1x, ../images/Delta_v3.png 2x, ../images/Delta_v3.webp 3x" alt="Delta v3" draggable=false>
+                        <img src="../images/Delta_v4.png" srcset="../images/Delta_v4.webp 1x, ../images/Delta_v4.png 2x, ../images/Delta_v4.webp 3x" alt="Delta v4" draggable=false>
+                        <img src="../images/Delta_v5.png" srcset="../images/Delta_v5.webp 1x, ../images/Delta_v5.png 2x, ../images/Delta_v5.webp 3x" alt="Delta v5" draggable=false>
+                        <!--
+                        <img src="images/Delta_v0.png" alt="Delta v0" draggable=false>
+                        <img src="images/Delta_v1.png" alt="Delta v1" draggable=false>
+                        <img src="images/Delta_v2.png" alt="Delta v2" draggable=false>
+                        <img src="images/Delta_v3.png" alt="Delta v3" draggable=false>
+                        <img src="images/Delta_v4.png" alt="Delta v4" draggable=false>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Clever fix to avoid image bumping out of row -->
+    <div class="row"></div>
+    <hr>
+    <!-- Purpose Section -->
+    <div class="section">Purpose</div>
+    <div class="text-allign">
+        <p>
+            Delta consists of 4 projects that all work on Discord in one way or another.<br>
+            <br>
+            Delta uses the "." prefix for all the commands from the projects below.<br>
+            <br>
+            Click on the button "Commands" to get a list of commands Delta can do from that project.
+            <br>
+        </p>
+    </div>
+    <!-- Row projects -->
+    <div class="row">
+        <!-- First project -->
+        <div class="columnpurpose">
+            <div class="card">
+                <picture>
+                    <source srcset="../images/NadekoBot.webp" type="image/webp" draggable=false style="width:100%" />
+                    <img src="../images/NadekoBot.png" draggable=false alt="NadekoBot Image" style="width:100%" />
+                </picture>
+                <div class="container">
+                    <h2>NadekoBot</h2>
+                    <div style="color:grey;">General functionalities</div>
+                    <p>
+                        NadekoBot offers more then 430+ commands of all kinds!<br>
+                        This version contains art pieces from Delta and some minor changes!
+                    </p>
+                    <a class="button" href="https://nadekobot.me/commands" target="_blank" style="text-decoration:none">Commands</a>
+                </div>
+            </div>
+        </div>
+        <!-- Second project -->
+        <div class="columnpurpose">
+            <div class="card">
+                <picture>
+                    <source srcset="../images/Avaire.webp" type="image/webp" draggable=false style="width:100%" />
+                    <img src="../images/Avaire.png" draggable=false alt="Avaire Image" style="width:100%" />
+                </picture>
+                <div class="container">
+                    <h2>AvaIre</h2>
+                    <div style="color:grey;">Music functionalities</div>
+                    <p>
+                        AvaIre is a high quality Music bot, with many other commandes aswell.<br>
+                        This version contains only the music features.
+                    </p>
+                    <a class="button" href="https://avairebot.com/docs/master#music" target="_blank" style="text-decoration:none">Commands</a>
+                </div>
+            </div>
+        </div>
+        <!-- Third project -->
+        <div class="columnpurpose">
+            <div class="card">
+                <picture>
+                    <source srcset="../images/Discord.RSS.webp" type="image/webp" draggable=false style="width:100%" />
+                    <img src="../images/Discord.RSS.png" draggable=false alt="Discord.RSS Image" style="width:100%" />
+                </picture>
+                <div class="container">
+                    <h2>Discord.RSS</h2>
+                    <div style="color:grey;">RSS-Feeds functionalities</div>
+                    <p>
+                        Discord.RSS is focused on delivering and customizing all forms of RSS-feeds straight to your Server!<br>
+                        This version has a higher feed limit.
+                    </p>
+                    <a class="button" href="https://github.com/synzen/Discord.RSS/wiki/Discord-Commands" target="_blank" style="text-decoration:none">Commands</a>
+                </div>
+            </div>
+        </div>
+        <!-- Fourth project -->
+        <div class="columnpurpose">
+            <div class="card">
+                <picture>
+                    <source srcset="../images/D-zone.webp" type="image/webp" draggable=false style="width:100%" />
+                    <img src="../images/D-zone.png" draggable=false alt="D-Zone Image" style="width:100%" />
+                </picture>
+                <div class="container">
+                    <h2>D-Zone</h2>
+                    <div style="color:grey;">Ambient life simulation</div>
+                    <p>
+                        D-Zone is an ambient life simulation of the Discord servers it is in.<br>
+                        Use: ".pixel" to get the link to your Discord server!
+                    </p>
+                    <a class="button" href="https://github.com/vegeta897/d-zone" target="_blank" style="text-decoration:none">Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- The Team section -->
+    <div class=section>The Team</div>
+    <div class=text-allign>
+        <p>
+            Without the help of my best friends listed below, I wouldn't be able to make Delta as she is today. I hope to add more of my friends into this section, by encouraging me in what I do while I know you for so long means for me your part of the team.<br>
+            <br>
+        </p>
+    </div>
+    <!-- First row -->
+    <div class="row">
+        <!-- First person -->
+        <div class="column">
+            <div class="card">
+                <picture>
+                    <source srcset="../images/Yamiau.webp" type="image/webp" draggable=false style="width:100%" />
+                    <img src="../images/Yamiau.png" draggable=false alt="Yami Image" style="width:100%" />
+                </picture>
+                <div class="container">
+                    <div style="line-height:2.3em;font-family:ELIZAJANE;font-size:35px;">Yami</div>
+                    <p style="color:grey;">Main Motive & Designer</p>
+                    <p>Young and joyful artist growing to be where most dream of.<br>The one that brings respect.</p>
+                    <a class="button" href="https://www.deviantart.com/azunyas" target="_blank" style="text-decoration:none">Gallery</a>
+                </div>
+            </div>
+        </div>
+        <!-- Second person -->
+        <div class="column">
+            <div class="card">
+                <picture>
+                    <source srcset="../images/Nyxiare.webp" type="image/webp" draggable=false style="width:100%" />
+                    <img src="../images/Nyxiare.png" draggable=false alt="Ayalana Image" style="width:100%" />
+                </picture>
+                <div class="container">
+                    <div style="line-height:1.291em;font-family:DYNALIGHT;font-size:62px;">Cinialy</div>
+                    <p style="color:grey;">Motive & Main Designer</p>
+                    <p>Confident, understanding of other concerns and an amazing friend to have.<br>The one that brings reason.</p>
+                    <a class="button" href="https://www.deviantart.com/nyxchi-u" target="_blank" style="text-decoration:none">Gallery</a>
+                </div>
+            </div>
+        </div>
+        <!-- Third person -->
+        <div class="column">
+            <div class="card">
+                <picture>
+                    <source srcset="../images/Lamina.webp" type="image/webp" draggable=false style="width:100%" />
+                    <img src="../images/Lamina.png" draggable=false alt="Lamina Image" style="width:100%" />
+                </picture>
+                <div class="container">
+                    <div style="line-height:1.39em;font-family:BLACKJACK;font-size:58px;">Lamina</div>
+                    <p style="color:grey;">Designer</p>
+                    <p>A long-term friend who can be tougher than a diamond but as sweet as pie.<br>The one that brings emotion.</p>
+                    <a class="button" href="https://www.deviantart.com/diamond-nights" target="_blank" style="text-decoration:none">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second row -->
+    <div class="row">
+        <!-- Fourth person -->
+        <div class="column">
+            <div class="card">
+                <picture>
+                    <source srcset="../images/ArtisticFox.webp" type="image/webp" draggable=false style="width:100%" />
+                    <img src="../images/ArtisticFox.jpg" draggable=false alt="/story.txt" style="width:100%" />
+                </picture>
+                <div class="container">
+                    <div style="line-height:2.22em;font-family:EDO;font-size:36px;">AstroCarrot</div>
+                    <p style="color:grey;">Designer & Inspiration</p>
+                    <p>The longest friend I ever had, the one that started it all. The one that got it all.<br>The one that brings passion & purpose.</p>
+                    <a class="button" href="https://www.instagram.com/astronautcarrot/" target="_blank" style="text-decoration:none">Gallery</a>
+                </div>
+            </div>
+        </div>
+        <!-- Fifth person -->
+        <div class="column">
+            <div class="card">
+                <picture>
+                    <source srcset="../images/Gremagol.webp" type="image/webp" draggable=false style="width:100%" />
+                    <img src="../images/Gremagol.png" draggable=false alt="Gremagol image" style="width:100%" />
+                </picture>
+                <div class="container">
+                    <div style="line-height:1.37em;font-family:JDNEOS;font-size:58px;">Gremagol</div>
+                    <p style="color:grey;">Technical Advisor</p>
+                    <p>A developer taking his ideas and feelings into a deeply personalized bot called Ene.<br>The one that brings consciousness.</p>
+                    <a class="button" href="https://gremagol.com/" target="_blank" style="text-decoration:none">Website</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Bottom text -->
+    <div class="section" style="letter-spacing: 8px;">DELTA</div>
+    <!-- Script elements -->
+    <script>
+        // Script when called, changes the style of the side menu from 0 to 190px.
+        function openNav() {
+            // Moves the menu open
+            document.getElementById("mySidenav").style.width = "190px"; //250px
+            // Moves the open icon closed
+            document.getElementById("main").style.marginLeft = "-190px"; //190px
+        }
+        // Script when called, changes the style of the side menu from 190px to 0.
+        function closeNav() {
+            // Moves the menu closed
+            document.getElementById("mySidenav").style.width = "0";
+            // Moves the open icon open
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>
+

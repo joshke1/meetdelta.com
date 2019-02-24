@@ -1,0 +1,351 @@
+/* General style */
+body {
+    background-color: #00070d;
+    transition: background-color .5s;
+    color: #fff;
+    margin: auto;
+    font-family: PTSANS;
+    box-sizing: border-box;
+}
+
+/* For the slideshow */
+.fling-minislide {
+    height: auto;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+    /* For the slideshows pictures */
+    .fling-minislide img {
+        position: absolute;
+        animation: fling-minislide 109s infinite;
+        opacity: 0;
+        height: auto;
+        left: 0;
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        right: 0;
+    }
+
+/* Transition sequence of the slideshow */
+@keyframes fling-minislide {
+    25% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+.fling-minislide img:nth-child(1) {
+    animation-delay: -9s;
+}
+
+.fling-minislide img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.fling-minislide img:nth-child(3) {
+    animation-delay: 17s;
+}
+
+.fling-minislide img:nth-child(4) {
+    animation-delay: 35s;
+}
+
+.fling-minislide img:nth-child(5) {
+    animation-delay: 54s;
+}
+
+.fling-minislide img:nth-child(6) {
+    animation-delay: 72s;
+}
+
+/* General fonts */
+@font-face {
+    font-family: PTSANS;
+    src: url(fonts/PTSANS.woff2) format('woff2');
+    font-display: auto;
+}
+
+@font-face {
+    font-family: ELIXIA;
+    src: url(fonts/ELIXIA.woff2) format('woff2');
+    font-display: auto;
+}
+
+/* Very speciale bold edit */
+@font-face {
+    font-family: ELIXIA2;
+    src: url(fonts/ELIXIA2.woff2) format('woff2');
+    font-display: auto;
+}
+
+/* Fonts for friends */
+@font-face {
+    font-family: DYNALIGHT;
+    src: url(fonts/DYNALIGHT.woff2) format('woff2');
+    font-display: auto;
+}
+
+@font-face {
+    font-family: ELIZAJANE;
+    src: url(fonts/ELIZAJANE.woff2) format('woff2');
+    font-display: auto;
+}
+
+@font-face {
+    font-family: JDNEOS;
+    src: url(fonts/JDNEOS.woff2) format('woff2');
+    font-display: auto;
+}
+
+@font-face {
+    font-family: EDO;
+    src: url(fonts/EDO.woff2) format('woff2');
+    font-display: auto;
+}
+
+@font-face {
+    font-family: BLACKJACK;
+    src: url(fonts/BLACKJACK.woff2) format('woff2');
+    font-display: auto;
+}
+
+@font-face {
+    font-family: NIDUS;
+    src: url(fonts/NIDUS.woff2) format('woff2');
+    font-display: auto;
+}
+
+/* General image properties */
+img {
+    vertical-align: middle
+}
+
+.centered-middle-bold {
+    font-size: 1.6em; /* font-size: 1.6em; */
+    letter-spacing: 2px;
+    font-family: ELIXIA2;
+    text-align: center;
+}
+
+/* Attributes for the quote in the middle home page only! */
+.centered-middle {
+    position: fixed;
+    bottom: 65px;
+    left: 1%;
+    right: 1%;
+    font-size: 3em; /* font-size: 2.3em; 2.2em*/
+    letter-spacing: 0;
+    background-color: #00070d;
+    padding-bottom: 30px;
+    font-family: ELIXIA;
+    text-align: center;
+}
+
+/* Bottom Delta text home page only! */
+.centered-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 1%;
+    right: 1%;
+    font-size: 80px;
+    letter-spacing: 8px;
+    background-color: #00070d;
+    font-family: ELIXIA;
+    text-align: center;
+}
+
+/* General text properties */
+.text {
+    color: #f2f2f2;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    text-align: center;
+    padding: 8px 12px 25px;
+    font-weight: bolder
+}
+
+/* Resizing helps properties */
+*,
+:after,
+:before {
+    box-sizing: inherit
+}
+
+/* Section title properties */
+.section {
+    bottom: 0;
+    font-size: 80px;
+    letter-spacing: 0;
+    background-color: #00070d;
+    font-family: ELIXIA;
+    text-align: center;
+}
+
+/* Allign the text properties */
+.text-allign {
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em
+}
+
+/* Change columnpurpose length */
+.column,
+.columnpurpose,
+.columnabout {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    text-align: center;
+}
+
+/* Change column length */
+.column {
+    width: 33.3%;
+    text-align: center;
+}
+
+.columnabout {
+    width: 50%;
+    text-align: center;
+}
+
+/* Container property */
+.container {
+    padding: 0 16px
+}
+
+/* Card property */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2)
+}
+
+/* Rezising cards/containers */
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.button {
+    border: 0;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-family: NIDUS;
+    border-radius: 4px;
+    transition-duration: .4s
+}
+
+    /* Apply grey tint on hover */
+    .button:hover {
+        background-color: #555
+    }
+
+/* Side menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e6eef2;
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 60px;
+    opacity: .9
+}
+
+    /* Side menu for all a elements */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #00070d;
+        display: block;
+        transition: .3s;
+        font-family: NIDUS;
+        text-align: left
+    }
+
+        /* Side menu for all a elements on hover */
+        .sidenav a:hover {
+            color: #727272
+        }
+
+/* Side menu head text */
+.head1 {
+    font-family: NIDUS;
+    color: #999;
+    text-decoration: underline;
+    font-size: 30px;
+    top: 20px;
+    left: 33px;
+    position: absolute
+}
+
+/* Side menu close button */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px
+}
+
+/* Change attributes when screen is lower then 650px */
+@media screen and (max-width:650px) {
+    /* Make all colums 100% with for mobile support */
+    .column,
+    .columnpurpose,
+    .columnabout {
+        width: 100%;
+        display: block
+    }
+    .container {
+        margin: 16px 0 40px 0
+    }
+    /* If statement to resize the quote for smaller devices home page only! */
+    .centered-middle {
+        font-size: 2.2em;
+        bottom: 65px; /*55*/
+    }
+}
+
+/* If statement to resize the quote for smaller devices home page only! */
+@media screen and (max-width:1024px) {
+    .centered-middle {
+        font-size: 2.6em;
+        bottom: 65px; /*55*/
+    }
+}
+
+/* If statement to resize the quote for smaller devices home page only! */
+@media screen and (max-height:670px) {
+    .centered-middle {
+        font-size: 220%; /* 1.9em */
+        bottom: 65px; /*55*/
+    }
+}
+
+/* For opening the menu icon home only! */
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    z-index: 1
+}
