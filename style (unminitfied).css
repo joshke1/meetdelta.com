@@ -8,6 +8,63 @@ body {
     box-sizing: border-box;
 }
 
+/* General fonts */
+@font-face {
+    font-family: PTSANS;
+    font-display: auto;
+    src: url(fonts/PTSANS.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: ELIXIA;
+    font-display: auto;
+    src: url(fonts/ELIXIA.woff2) format('woff2');
+}
+
+/* Very speciale bold edit */
+@font-face {
+    font-family: ELIXIA2;
+    font-display: auto;
+    src: url(fonts/ELIXIA2.woff2) format('woff2');
+}
+
+/* Fonts for friends */
+@font-face {
+    font-family: DYNALIGHT;
+    font-display: auto;
+    src: url(fonts/DYNALIGHT.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: ELIZAJANE;
+    font-display: auto;
+    src: url(fonts/ELIZAJANE.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: JDNEOS;
+    font-display: auto;
+    src: url(fonts/JDNEOS.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: EDO;
+    font-display: auto;
+    src: url(fonts/EDO.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: BLACKJACK;
+    font-display: auto;
+    src: url(fonts/BLACKJACK.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: NIDUS;
+    font-display: auto;
+    src: url(fonts/NIDUS.woff2) format('woff2');
+}
+
 /* For the slideshow */
 .fling-minislide {
     height: auto;
@@ -61,63 +118,6 @@ body {
 
 .fling-minislide img:nth-child(6) {
     animation-delay: 72s;
-}
-
-/* General fonts */
-@font-face {
-    font-family: PTSANS;
-    src: url(fonts/PTSANS.woff2) format('woff2');
-    font-display: auto;
-}
-
-@font-face {
-    font-family: ELIXIA;
-    src: url(fonts/ELIXIA.woff2) format('woff2');
-    font-display: auto;
-}
-
-/* Very speciale bold edit */
-@font-face {
-    font-family: ELIXIA2;
-    src: url(fonts/ELIXIA2.woff2) format('woff2');
-    font-display: auto;
-}
-
-/* Fonts for friends */
-@font-face {
-    font-family: DYNALIGHT;
-    src: url(fonts/DYNALIGHT.woff2) format('woff2');
-    font-display: auto;
-}
-
-@font-face {
-    font-family: ELIZAJANE;
-    src: url(fonts/ELIZAJANE.woff2) format('woff2');
-    font-display: auto;
-}
-
-@font-face {
-    font-family: JDNEOS;
-    src: url(fonts/JDNEOS.woff2) format('woff2');
-    font-display: auto;
-}
-
-@font-face {
-    font-family: EDO;
-    src: url(fonts/EDO.woff2) format('woff2');
-    font-display: auto;
-}
-
-@font-face {
-    font-family: BLACKJACK;
-    src: url(fonts/BLACKJACK.woff2) format('woff2');
-    font-display: auto;
-}
-
-@font-face {
-    font-family: NIDUS;
-    src: url(fonts/NIDUS.woff2) format('woff2');
-    font-display: auto;
 }
 
 /* General image properties */
