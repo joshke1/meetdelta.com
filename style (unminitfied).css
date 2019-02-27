@@ -349,3 +349,9 @@ img {
     font-display: auto;
     src: url(fonts/NIDUS.woff2) format('woff2');
 }
+
+@font-face {
+    font-family: ANUNE;
+    font-display: auto;
+    src: url(fonts/ANUNE.woff2) format('woff2');
+}
