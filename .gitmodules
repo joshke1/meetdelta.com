@@ -1,3 +1,7 @@
 [submodule "dzone"]
 	path = dzone
 	url = https://github.com/Macley-Kun/dzone.git
+[submodule "c2-sans-fight"]
+	path = c2-sans-fight
+	url = https://github.com/Jcw87/c2-sans-fight.git
+	branch = gh-pages
