@@ -2,7 +2,3 @@
 	path = sans
 	url = https://github.com/Jcw87/c2-sans-fight.git
 	branch = gh-pages
-[submodule "dzone"]
-	path = dzone
-	url = https://github.com/Macley-Kun/dzone.git
-	branch = heroku
